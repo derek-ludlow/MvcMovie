@@ -15,7 +15,11 @@ public class Movie
     public string Genre { get; set; }
     [Range(1, 100), DataType(DataType.Currency)]
     [Column(TypeName = "decimal(18, 2)")]
+    public static List<string> AllowedGenres = new List<string> { "Comedy", "Drama", "Documentary" };
     public decimal Price { get; set; }
     [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$"), StringLength(5)]
     public string Rating { get; set; }
+
+    public string Image { get; set; }
+
 }

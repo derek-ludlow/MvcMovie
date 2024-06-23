@@ -20,38 +20,33 @@ public static class SeedData
                 return;   // DB has been seeded
             }
             context.Movie.AddRange(
-                new Movie
-                {
-                    Title = "When Harry Met Sally",
-                    ReleaseDate = DateTime.Parse("1989-2-12"),
-                    Genre = "Romantic Comedy",
-                    Rating = "R",
-                    Price = 7.99M
-                },
-                new Movie
-                {
-                    Title = "Ghostbusters ",
-                    ReleaseDate = DateTime.Parse("1984-3-13"),
-                    Genre = "Comedy",
-                    Rating = "PG-13",
-                    Price = 8.99M
-                },
-                new Movie
-                {
-                    Title = "Ghostbusters 2",
-                    ReleaseDate = DateTime.Parse("1986-2-23"),
-                    Genre = "Comedy",
-                    Rating = "PG-13",
-                    Price = 9.99M
-                },
-                new Movie
-                {
-                    Title = "Rio Bravo",
-                    ReleaseDate = DateTime.Parse("1959-4-15"),
-                    Genre = "Western",
-                    Rating = "PG-13",
-                    Price = 3.99M
-                }
+               new Movie
+               {
+                   Title = "The RM",
+                   ReleaseDate = DateTime.Parse("2003-1-31"),
+                   Genre = "Comedy",
+                   Price = 7.99M,
+                   Rating = "PG",
+                   Image = "the-rm.jpg"
+               },
+            new Movie
+            {
+                Title = "The Other Side of Heaven",
+                ReleaseDate = DateTime.Parse("2001-4-12"),
+                Genre = "Drama",
+                Price = 8.99M,
+                Rating = "PG",
+                Image = "other-side-of-heaven.jpg"
+            },
+            new Movie
+            {
+                Title = "Meet the Mormons",
+                ReleaseDate = DateTime.Parse("2014-10-10"),
+                Genre = "Documentary",
+                Price = 9.99M,
+                Rating = "PG",
+                Image = "meet-the-mormons.jpg"
+            }
             );
             context.SaveChanges();
         }

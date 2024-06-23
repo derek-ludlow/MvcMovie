@@ -1,4 +1,4 @@
-html {
+/*html {
   font-size: 14px;
 }
 
@@ -18,5 +18,164 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    background-color: #f0f8ff;
+    color: #333;
+    margin-bottom: 60px;
+}*/
+
+/* General styles */
+body {
+    background-color: #d0f0c0; /* Light green background */
+    color: #333; /* Default text color */
 }
+
+h2 {
+    color: #004080; /* Dark blue headings */
+}
+
+footer {
+    background-color: #d0f0c0; /* Light green footer background */
+    color: #004080; /* Dark blue footer text */
+    padding: 10px;
+}
+
+/* Additional styles to complement the new color scheme */
+.navbar {
+    background-color: #004080; /* Dark blue navbar background */
+    color: #ffffff; /* White text */
+}
+
+    .navbar a {
+        color: #ffffff; /* White text for links in the navbar */
+    }
+
+.btn-primary {
+    background-color: #004080; /* Dark blue buttons */
+    border-color: #004080;
+}
+
+    .btn-primary:hover {
+        background-color: #002d5f; /* Darker blue on hover */
+        border-color: #002d5f;
+    }
+
+.table {
+    background-color: #ffffff; /* White background for tables */
+    color: #333; /* Default text color */
+}
+
+    .table th {
+        background-color: #004080; /* Dark blue for table headers */
+        color: #ffffff; /* White text */
+    }
+
+    .table td {
+        background-color: #d0f0c0; /* Light green for table cells */
+    }
+
+/* Additional existing styles */
+.container {
+    margin-top: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    height: calc(1.6em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="datetime"]:focus,
+    input[type="datetime-local"]:focus,
+    input[type="date"]:focus,
+    input[type="month"]:focus,
+    input[type="time"]:focus,
+    input[type="week"]:focus,
+    input[type="number"]:focus,
+    input[type="email"]:focus,
+    input[type="url"]:focus,
+    input[type="search"]:focus,
+    input[type="tel"]:focus,
+    input[type="color"]:focus,
+    select:focus,
+    textarea:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    }
+
+.form-control::-webkit-input-placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+.form-control::-ms-input-placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+input[type="range"] {
+    display: block;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #004080; /* Dark blue links */
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #002d5f; /* Darker blue links on hover */
+        text-decoration: underline;
+    }
